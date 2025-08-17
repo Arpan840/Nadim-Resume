@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Nadim Iqbal - Flutter Mobile Application Developer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    :root {
+      --main-blue: #2266aa;
+      --side-bg: #f3f6fa;
+      --accent-bg: #dde7f2;
+    }
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: #e9ecef;
+      margin: 0;
+      padding: 0;
+    }
+    .resume-container {
+      max-width: 850px;
+      margin: 32px auto;
+      background: #fff;
+      box-shadow: 0 2px 18px #00000018;
+      display: flex;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+    .side {
+      background: var(--side-bg);
+      width: 260px;
+      padding: 32px 18px;
+      flex-shrink: 0;
+      border-right: 1px solid #e3e6ea;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+    }
+    .side h2 {
+      color: var(--main-blue);
+      font-size: 19px;
+      margin-top: 18px;
+      margin-bottom: 8px;
+      letter-spacing: 1px;
+    }
+    .side .contact, .side .skills, .side .languages, .side .education {
+      margin-bottom: 14px;
+      font-size: 14px;
+    }
+    .side .skills span, .side .languages span {
+      display: inline-block;
+      background: var(--accent-bg);
+      color: var(--main-blue);
+      margin: 3px 6px 3px 0;
+      padding: 2px 8px;
+      border-radius: 5px;
+      font-size: 13px;
+    }
+    .main {
+      flex: 1;
+      padding: 32px 40px;
+      display: flex;
+      flex-direction: column;
+    }
+    .header .name {
+      font-size: 28px;
+      color: var(--main-blue);
+      margin-bottom: 2px;
+      font-weight: 700;
+      letter-spacing: 1px;
+    }
+    .header .role {
+      font-size: 18px;
+      color: #222;
+      margin-bottom: 6px;
+    }
+    .header .location {
+      color: #888;
+      font-size: 13px;
+    }
+    section {
+      margin-top: 26px;
+    }
+    section h2 {
+      color: var(--main-blue);
+      font-size: 19px;
+      margin-bottom: 10px;
+      margin-top: 0;
+      letter-spacing: 1px;
+      font-weight: 600;
+    }
+    .exp-job {
+      margin-bottom: 16px;
+    }
+    .exp-job .title {
+      font-weight: 600;
+      font-size: 15px;
+      color: #212c3a;
+    }
+    .exp-job .org-date {
+      display: flex;
+      justify-content: space-between;
+      font-size: 13px;
+      color: #666;
+      margin-bottom: 6px;
+    }
+    .exp-job ul {
+      margin: 0 0 0 18px;
+      padding: 0;
+      list-style: circle;
+      font-size: 14px;
+    }
+    .project-list ul {
+      margin: 0 0 0 18px;
+      padding: 0;
+      font-size: 14px;
+    }
+    .project-list li {
+      margin: 4px 0;
+    }
+    @media (max-width: 700px) {
+      .resume-container {
+        flex-direction: column;
+      }
+      .side {
+        width: auto;
+        border-right: none;
+        border-bottom: 1px solid #e3e6ea;
+        padding: 22px 12px;
+      }
+      .main {
+        padding: 22px 12px;
+      }
+    }
+  </style>
+</head>
+<body>
+<div class="resume-container">
+  <!-- Side Bar -->
+  <aside class="side">
+    <h2>Contact</h2>
+    <div class="contact">
+      📞 +91-8409942124 <br>
+      ✉️ nadimmallick46@gmail.com <br>
+      📍 Sukhdev Vihar, New Delhi-110025 <br>
+      <span>LinkedIn</span>
+    </div>
+    <h2>Skills</h2>
+    <div class="skills">
+      <span>Flutter</span>
+      <span>Dart</span>
+      <span>FlutterFlow</span>
+      <span>Firebase</span>
+      <span>Android Studio</span>
+      <span>Electron.js</span>
+      <span>Core Java</span>
+      <span>REST APIs</span>
+      <span>Git</span>
+      <span>BLoC</span>
+    </div>
+    <h2>Languages</h2>
+    <div class="languages">
+      <span>English</span>
+      <span>Hindi</span>
+    </div>
+    <h2>Education</h2>
+    <div class="education">
+      <b>B.Tech/B.E. (Computers)</b><br>
+      Punjab Technical University<br>
+      2016–2020
+    </div>
+  </aside>
+  <!-- Main Content -->
+  <main class="main">
+    <div class="header">
+      <div class="name">Nadim Iqbal</div>
+      <div class="role">Mobile App Developer (Flutter)</div>
+      <div class="location">New Delhi, India</div>
+    </div>
+
+    <section>
+      <h2>Profile</h2>
+      <div>
+        Mobile application developer specialized in Flutter with 3+ years of experience in cross-platform Android/iOS app development. Adept at BLoC state management, seamless UI/UX delivery, push notification integration, and RESTful API consumption. Passionate about building engaging, secure, and scalable apps using latest technologies.
+      </div>
+    </section>
+
+    <section>
+      <h2>Experience</h2>
+      <div class="exp-job">
+        <div class="org-date">
+          <span class="title">Software Developer</span>
+          <span>Hoop Konsulting | Oct 2024 – Present</span>
+        </div>
+        <ul>
+          <li>Developed robust cross-platform apps with Flutter and FlutterFlow.</li>
+          <li>Integrated third-party APIs and real-time notifications with Firebase Cloud Messaging.</li>
+          <li>Ensured compliance with latest Android/iOS best practices and security standards.</li>
+        </ul>
+      </div>
+      <div class="exp-job">
+        <div class="org-date">
+          <span class="title">Software Developer</span>
+          <span>Toxsl Technology Pvt Ltd. | Oct 2023 – Oct 2024</span>
+        </div>
+        <ul>
+          <li>Collaborated on scalable mobile solutions using Flutter and integrated social, payment, and location features.</li>
+        </ul>
+      </div>
+      <div class="exp-job">
+        <div class="org-date">
+          <span class="title">Mobile Application Developer</span>
+          <span>Cliffex Software Consulting Pvt. Ltd. | Jun 2022 – Sep 2023</span>
+        </div>
+        <ul>
+          <li>Led UI/UX design and clean code delivery for Android/iOS apps with cross-team collaboration.</li>
+          <li>Implemented REST API, geolocation, and payment processing integrations for multi-module applications.</li>
+        </ul>
+      </div>
+      <div class="exp-job">
+        <div class="org-date">
+          <span class="title">Software Engineer (Freelancer)</span>
+          <span>WAM Electronics Pvt. Ltd. | Jan 2022 – Jun 2022</span>
+        </div>
+        <ul>
+          <li>Built Android applications for IoT devices with MQTT, CoAP-based communication protocols and instant notifications.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="project-list">
+      <h2>Key Projects</h2>
+      <ul>
+        <li>
+          <b>House of Peace</b> – Meditation and audio app with scalable architecture, BLoC management, push notifications, REST API integration.
+        </li>
+        <li>
+          <b>Court Report</b> – Cross-platform tennis analytics, match tracking, player dashboards, leaderboards.
+        </li>
+        <li>
+          <b>B.A.O</b> – eSIM recharge & management platform with Stripe payment gateway integration.
+        </li>
+        <li>
+          <b>KiiQui</b> – E-commerce bidding app; integrated REST APIs & Stripe/Braintree payments.
+        </li>
+        <li>
+          <b>The CalorieFinder</b> – Nutrition and meal planner app built with FlutterFlow and RESTful APIs.
+        </li>
+        <li>
+          <b>GB-Movil, Allergen, DOE</b> – Healthcare and business management mobile solutions.
+        </li>
+      </ul>
+    </section>
+  </main>
+</div>
+</body>
+</html>
